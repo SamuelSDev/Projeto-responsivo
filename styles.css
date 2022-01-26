@@ -113,7 +113,29 @@ h4{
     border-radius: 6px;
     cursor: pointer;
     background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(115,9,121,1) 60%);
+
+    transition: all 0.5s ease-in-out;
 }
+
+.buy-now img{
+    display: none;
+    width: 50px;
+   
+}
+
+.buy-now:hover{
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.buy-now:hover img{
+    display: block;
+}
+
 
 .column-2{
     display: flex;
@@ -124,6 +146,8 @@ h4{
 .controller{
     width: 80%;
     z-index: 2;
+
+    animation: moveControler 3s infinite alternate ease-in-out;
 }
 
 .color-box{
@@ -194,19 +218,25 @@ h4{
     }
 
     #menu-list{
+        font-size: 20px;
         position: relative;
-        top: 60px;
+        top: 65px;
         left: 60px;
         overflow: hidden;
+        transition: all 0.5s ease-in-out;
     }
 
     .menu-icon{
         display: block;
+        cursor: pointer;
     }
 
     .nav-li{
         display: block;
         margin-top: 5px;
     }
+}
 
+@keyframes moveControler{
+    from{ transform: translate(-5%, -5%)rotate(-5deg);} 
 }
