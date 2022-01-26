@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Playstation Store</title>
+</head>
+
+<body>
+    <div class="conteiner">
+
+
+        <div class="nav-bar">
+            <img class="logo" src="assents/logo.png" alt="logo-ps">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link">Accessories</a></li>
+                    <li class="nav-li"><a class="nav-link">Controls</a></li>
+                    <li class="nav-li"><a class="nav-link">Others</a></li>
+                </ul>
+            </nav>
+            <img src="assents/menu.png" alt="menu-icon" class="menu-icon" onclick="showMenu()">
+
+        </div>
+
+        <div class="row">
+            <div class="column-1">
+                <h2>Ps5 DualShock</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <p>Controller original</p>
+                <h4>R$ 459,90</h4>
+                <button class="buy-now">Buy Now</button>
+            </div>
+
+            <div class="column-2">
+                <img class="controller" src="assents/controller.png" alt="Controller">
+                <div class="color-box"></div>
+                <button class="add-cart"> <img src="assents/add.png" alt="add"> </button>
+            </div>
+
+        </div>
+
+        <div class="social-links">
+            <img src="assents/fb.png" alt="icon-fb">
+            <img src="assents/ig.png" alt="icon-ig">
+            <img src="assents/tw.png" alt="icon-tw">
+        </div>
+
+    </div>
+
+</body>
+<script>
+    const menuList = document.getElementById("menu-list")
+    menuList.style.maxHeight = "0px"
+
+    function showMenu(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "120px"
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+
+    }
+
+
+
+</script>
+
+
+
+</html>
